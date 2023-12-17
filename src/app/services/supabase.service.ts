@@ -11,4 +11,14 @@ import { createClient } from '@supabase/supabase-js';
     public supabase = createClient(this.supabaseUrl, this.supabaseApiKey);
   
     constructor() { }
+
+
+    async insertData(tableName: string, data: any) {
+      const { data: insertedData, error } = await this.supabase
+        .from(tableName)
+        .insert([data]);
+      if (error) throw error;
+      return insertedData;
+    }
+    
   }

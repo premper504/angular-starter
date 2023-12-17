@@ -5,6 +5,11 @@
     display: flex;
   }
   
+.spiner {
+  display: flex;
+  justify-content: center;
+}
+  
   .header {
     width: 100%;
     max-width: 700px;
