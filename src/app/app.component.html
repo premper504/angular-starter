@@ -1,53 +1,28 @@
-
-<body class="body">
-  <div class="div-block-2">
-    <div class="header"></div>
-    <div class="div-block-3"><img src=".././assets/Group-3.svg" loading="lazy" width="341" alt="" class="image"><img src=".././assets/Group-4.svg" loading="lazy" width="437" alt="" class="image-2"><img src=".././assets/Group-1.svg" loading="lazy" width="271" alt="">
-      <div class="continueform"><img src=".././assets/down.svg" loading="lazy" alt=""></div>
-      
-      <div class="form_container">
-
-        <form style="min-width:80%;">
-          <div class="formheader"> <img src=".././assets/Group-3.svg"> </div>
-          
-          <input type="text" id="fname" name="fname" class="input" required placeholder="Nombres">
-          <input type="text" id="lname" name="lname" class="input" required placeholder="Apellidos">
-          <input type="email" id="email" name="email" class="input" required placeholder="Correo electrónico">
-          <input type="text" id="identity" name="identity" class="input" required placeholder="Identidad">
-          <input type="text" id="phone" name="phone" class="input" required placeholder="Celular">
-          <input type="text" id="city" name="city" class="input" required placeholder="Ciudad">
-          <input type="text" id="station" name="station" class="input" required placeholder="Estación">
-          
-          <div class="uploadcontainer">
-          <div style="color: white; margin-bottom: 10px;"> Carga una imagen
-            de tu factura</div>
-            <div class="inputfile"> 
-              <img src=".././assets/uploadUNO.png" loading="lazy" height="60px " alt="" >
-              <input type="file" id="upload" name="upload" class="file" required placeholder="Examinar">
-            </div>
-          </div>
-
-          <div class="suscribe"> 
-            <label style="color:white; font-weight: 100;">
-              <input type="checkbox" name="opcion1" value="valor1">
-                 Deseo recibir información sobre UNO honduras y futuras promociones
-
-            </label>
-          </div>
-
-          <button class="buttonSend">
-            ENVIAR
-          </button>
-
-
-      </form>
-      
-      
-      
-      </div>
-      
-      <div class="footerlogo"><img src=".././assets/roup-5.svg" loading="lazy" alt="" class="image-3"></div>
-    </div>
-  </div>
- 
-</body>
+<div>
+  <h1>{{ title }}</h1>
+  <h2>Listado de la tabla ficha_salida:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Avis Location</th>
+        <th>Avis Location ID</th>
+        <th>Avis User</th>
+        <th>Avis User ID</th>
+        <th>Code</th>
+        <th>B ID</th>
+        <th>MVA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of fichaSalidaData">
+        <td>{{ item.avis_location }}</td>
+        <td>{{ item.avis_location_id }}</td>
+        <td>{{ item.avis_user }}</td>
+        <td>{{ item.avis_user_id }}</td>
+        <td>{{ item.code }}</td>
+        <td>{{ item.b_id }}</td>
+        <td>{{ item.mva }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
