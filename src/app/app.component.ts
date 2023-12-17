@@ -17,7 +17,7 @@ export class AppComponent {
   
   constructor(private supabaseService: SupabaseService) {  }
 
-  async ngOnInit() {
+   async ngOnInit() {
     // Llama al método para obtener los datos de la tabla ficha_salida
     const { data, error } = await this.supabaseService.supabase
       .from('ficha_salida')
@@ -29,5 +29,4 @@ export class AppComponent {
       console.error('Error al obtener datos de ficha_salida:', error);
     }
   }
-  
 }
