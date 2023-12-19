@@ -1,0 +1,188 @@
+.body {
+    background-color: #012d5b;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  
+.spiner {
+  display: flex;
+  justify-content: center;
+}
+  
+  .header {
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    background-image: url('../assets/santa-helicopeteroUNO-p-1080.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+    display: block; 
+    background-attachment: fixed;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .inputfile{
+  
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    min-height: 70px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .suscribe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-color: white;
+    border-top-width: 1;
+    border-top-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1;
+    border-bottom-style: solid;
+  }
+  
+  .buttonSend{
+    width: 100%;
+    background-color: #49B8DB;
+    padding: 20px;
+    border-radius: 20px;
+    color: #012d5b;
+    font-weight: 700;
+    margin-bottom: 50px;
+  
+  }
+  
+  .formheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 10px;
+    height: 50px;
+    background-color: #32588A;
+    border-radius: 30px;
+    border-color: rgba(255, 255, 255, 0.095);
+    color: white;
+   
+  }
+  
+  .input::placeholder{
+    color: rgba(255, 255, 255, 0.766);
+  }
+  
+  
+  
+  .div-block {
+    height: 200px;
+    margin-top: 300px;
+  }
+  
+  .div-block-2 {
+    width: 100%;
+    height: 95vh;
+    max-width: 700px;
+  }
+  
+  .image {
+    margin-bottom: 28px;
+    display: block;
+  }
+  
+  .div-block-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 0%, #012d5b 23%);
+    flex-direction: column;
+    align-items: center;
+    margin-top: -402px;
+    padding-top: 204px;
+    padding-bottom: 0;
+    display: flex;
+    z-index: 10;
+  }
+  
+  .image-2 {
+    margin-bottom: 27px;
+  }
+  
+  .section {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+  }
+  
+  .form_container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px;
+    display: flex;
+  }
+  
+  .image-3 {
+    width: 60px;
+  }
+  
+  .footerlogo {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 18px;
+    display: flex;
+  }
+  
+  .form_container-copy, .continueform {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .form_container, .form_container-copy, .continueform {
+      padding: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .div-block-2 {
+      height: auto;
+      min-height: 95vh;
+    }
+  
+    .image, .image-2 {
+      width: 90%;
+    }
+  
+  
+  
+    .footerlogo {
+      justify-content: flex-end;
+      margin-top: -27px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+   
+  
+  
+   
+    
+  }
